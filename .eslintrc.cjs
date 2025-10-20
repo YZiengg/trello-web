@@ -2,14 +2,12 @@
 // Sample Eslint config for React project
 module.exports = {
   env: { browser: true, es2020: true, node: true },
-    extends: [
+  extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-+   'prettier'
+    'plugin:react-hooks/recommended'
   ],
-
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
   plugins: [
@@ -26,12 +24,13 @@ module.exports = {
     'react/display-name': 0,
     // MUI
     'no-restricted-imports': [
-    'error',
-    {
-      'patterns': ['@mui/*/*/*']
-    }
-      ,
-    ],
+      'error',
+      {
+        'patterns': ['@mui/*/*/*']
+      }
+
+    ]
+    ,
 
     //common
     'no-console': 1,
